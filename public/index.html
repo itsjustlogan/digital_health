@@ -7,17 +7,44 @@
   <title>Simple Project w/ Parcel</title>
   <link rel="shortcut icon" type="image" href="./favicon.ico">
   <link rel="stylesheet" href="/src/scss/main.scss">
-  <!-- external JavaScript librabries go here! -->
   <script src="https://unpkg.com/vue@3.0.2"></script>
   <script defer src="/src/JS/app.js" type="module"></script>
-  <!-- Additional scripts here! -->
 </head>
 <body class="max--width full--width">
   <div class="wrapper max--width center--middle">
-    <!-- Add your site or application content here -->
-    <main class="main--content full--width center--middle">
+
+    <div id="app">
+      <div class="bg bg--img"></div>
+      <header class="app--title fade--in">
+        <h1>Digital Health</h1>
+      </header>
       
-    </main>
+      <main class="main--content full--width center--middle">
+        <div v-show="mainMenu" class="title--wrapper full--width center--middle fade--in">
+          <h2 class="main--title">Put Your Phone Down <br> Be Present</h2>
+          <p class="main--subtitle">Improve your well being & mental health.</p>
+        </div>
+        <form v-show="mainMenu" @submit.prevent id="break fade--in">
+          <select v-model="time" name="break--options" id="times" required>
+            <option selected value= "300000">5 Minutes</option>
+            <option value= "1200000">20 Minutes</option>
+            <option value= "1800000">30 Minutes</option>
+            <option value= "2400000">40 Minutes</option>
+            <option value= "3600000">60 Minutes</option>
+            <option value= "5400000">90 Minutes</option>
+            <option value= "7200000">120 Minutes</option>
+          </select>
+        </form>
+      <div v-show="!mainMenu" class="countdown-wrapper fade--in">
+        <p class="countdown">{{ minutes }}:<span v-show="showZero">0</span>{{ seconds }}</p>
+      </div>
+
+      <div v-show="mainMenu" class="btn--wrapper fade--in">
+        <button @click="start" form="break" type="submit" id="button" class="btn transition">Take a Break</button>
+      </div>
+      </main>
+
+    </div>
   </div>
 </body>
 </html>

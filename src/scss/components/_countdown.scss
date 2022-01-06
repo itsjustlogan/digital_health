@@ -1,0 +1,6 @@
+@use '../utils' as u;
+
+.countdown {
+  color: u.$textcolor;
+  font-size: 6rem;
+}
