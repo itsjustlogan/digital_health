@@ -12,8 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@capacitor/android": "^3.3.4",
+    "@capacitor/cli": "^3.3.4",
     "@parcel/transformer-sass": "^2.0.1",
     "eslint": "^8.4.1",
     "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "@capacitor/core": "^3.3.4"
   }
 }
