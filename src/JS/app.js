@@ -9,7 +9,16 @@ const app = Vue.createApp({
       updater: null,
       mainMenu: true,
       showZero: false,
-      hi: 65,
+      defaultVal: 300000,
+      defaultLabel: '5 Minutes',
+      options: [
+        {val: 1200000, label: '20 minutes'},
+        {val: 1800000, label: '30 minutes'},
+        {val: 2400000, label: '40 minutes'},
+        {val: 3600000, label: '60 minutes'},
+        {val: 5400000, label: '90 minutes'},
+        {val: 7200000, label: '120 minutes'},
+      ],
     }
   },
   methods: {
@@ -39,8 +48,10 @@ const app = Vue.createApp({
       }
     },
     start() {
+      this.time = this.$refs.pickTime.value
       this.updater = setInterval(this.timer, this.second)
       this.mainMenu = false
+      console.log(this.time)
     },
   },
 })
