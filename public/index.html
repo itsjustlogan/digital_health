@@ -1,45 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Project w/ Parcel</title>
-  <link rel="shortcut icon" type="image" href="./favicon.ico">
-  <link rel="stylesheet" href="/src/scss/main.scss">
-  <script src="https://unpkg.com/vue@3.0.2"></script>
-  <script defer src="/src/JS/app.js" type="module"></script>
-</head>
-<body class="max--width full--width">
-  <div class="wrapper max--width center--middle">
-
-    <div id="app">
-      <div class="bg bg--img"></div>
-      <header class="app--title fade--in">
-        <h1>Digital Health</h1>
-      </header>
-      
-      <main class="main--content full--width center--middle">
-        <div v-show="mainMenu" class="title--wrapper full--width center--middle fade--in">
-          <h2 class="main--title">Put Your Phone Down <br> Be Present</h2>
-          <p class="main--subtitle">Improve your well being & mental health.</p>
-        </div>
-        <form v-show="mainMenu" @submit.prevent id="break fade--in">
-          <select ref="pickTime" name="break--options" id="times" required>
-            <option :value="defaultVal" selected>{{ defaultLabel }}</option>
-            <option v-for="time in options" :value="time.val">{{ time.label }}</option>
-          </select>
-        </form>
-
-      <div v-show="!mainMenu" class="countdown-wrapper fade--in">
-        <p class="countdown">{{ minutes }}:<span v-show="showZero">0</span>{{ seconds }}</p>
-      </div>
-      
-      <div v-show="mainMenu" class="btn--wrapper fade--in">
-        <button @click="start" form="break" type="submit" id="button" class="btn transition">Take a Break</button>
-      </div>
-      </main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Project w/ Parcel</title>
+    <link rel="shortcut icon" type="image" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/itsjustlogan/mini-css-utility-library@0.1.1/release-v0.1.1/index.0.1.1.css"
+    />
+    <link rel="stylesheet" href="/src/scss/main.scss" />
+    <script defer src="/src/app.js" type="module"></script>
+  </head>
+  <body class="max-w-100 h-screen">
+    <div class="container">
+      <div id="app"></div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
