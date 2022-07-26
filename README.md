@@ -10,7 +10,7 @@
 
 ---
 
-Most people spend a copious amount of time on their digital devices, allowing the day to with nothing to show for. This project hopes to tackle this, with the use of a simple timer to take a break from your phone or computer.
+Most people spend a copious amount of time on their digital devices, allowing the day to go by with nothing to show for. This project hopes to tackle this, with the use of a simple timer to take a break from your phone or computer.
 
 Within the app you select the duration, press the play button, and your break begins.
 
