@@ -1,18 +1,20 @@
-# **Digital Health**
+# **RIFT**
 
-**Version 1.1.0**
+**\*FKA Digital Health\***
 
 ![Logo](/public/favicon.ico)
+
+**v2.0.0**
 
 ## **Description**
 
 ---
 
-With the growing concerns over phone addiction and depression, I created this very simple app for people to commit to taking a break from their mobile devices.
+Most people spend a copious amount of time on their digital devices, allowing the day to go by with nothing to show for. This project hopes to tackle this, with the use of a simple timer to take a break from your phone or computer.
 
-Within this app you can select a time from a dropdown menu and commit to a break whose value is equal to the selected time. The app is written in Vue and is contained in just one single file component. Capacitor has been used for the mobile build of this app.
+Within the app you select the duration, press the play button, and your break begins.
 
-Currently this app lets you select a time and take a break. I hope to implement the feature of a global scoreboard that can filter by region, or search by username. This is to allow users to partake in friendly competition with friends and strangers alike, regarding who can use their phone the least.
+**[Try it out!]()**
 
 ## **License & Copyright**
 
