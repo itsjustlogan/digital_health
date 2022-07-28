@@ -2,9 +2,12 @@
 
 **\*FKA Digital Health\***
 
-![Logo](/public/favicon.ico)
+[![Logo](./public/favicon.ico)](https://rift-app.netlify.app/)
 
 **v2.0.0**
+
+![build passing](https://img.shields.io/badge/build-passing-brightgreen)
+![license](https://img.shields.io/badge/license-MIT-green)
 
 ## **Description**
 
@@ -14,7 +17,7 @@ Most people spend a copious amount of time on their digital devices, allowing th
 
 Within the app you select the duration, press the play button, and your break begins.
 
-**[Try it out!]()**
+**[Try it out!](https://rift-app.netlify.app/)**
 
 ## **License & Copyright**
 
